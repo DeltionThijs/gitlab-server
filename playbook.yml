@@ -17,9 +17,9 @@
         enabled: yes
         daemon_reload: yes
 
-    - name: Append docker to theintegrative user
+    - name: Append docker to thijs user
       ansible.builtin.user:
-        name: theintegrative
+        name: thijs
         shell: /bin/bash
         groups: docker
         append: yes
